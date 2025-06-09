@@ -33,8 +33,15 @@ const setView = (view) => {
 
 const selectSender = (sender) => {
   state.selectedSender = sender;
+  document.querySelector(".main-container").classList.add("show-details");
   renderConversation();
   highlightSenderInList();
+};
+
+const goBackToList = () => {
+  state.selectedSender = null;
+  document.querySelector(".main-container").classList.remove("show-details");
+  renderUI();
 };
 
 const renderUI = () => {
@@ -95,6 +102,7 @@ const renderConversation = () => {
 
   detailsView.innerHTML = `
     <div class="d-flex justify-content-between align-items-center border-bottom pb-2 mb-3">
+      <button class="btn btn-light d-md-none me-2" onclick="goBackToList()"><i class="bi bi-arrow-left"></i> Back</button>
       <h5 class="m-0">Conversation with ${state.selectedSender}</h5>
     </div>
     <div class="message-list">
@@ -155,6 +163,15 @@ const fetchMessages = async () => {
         });
     }
     renderUI();
+    // On initial load, if not on mobile, don't show details view
+    if (window.innerWidth > 767.98) {
+        document.querySelector('.main-container').classList.remove('show-details');
+    } else {
+        // On mobile, ensure we start with the list view
+        if (!state.selectedSender) {
+            document.querySelector('.main-container').classList.remove('show-details');
+        }
+    }
   } catch (error) {
     console.error("Error fetching messages:", error);
   }
