@@ -1,0 +1,50 @@
+{
+  "16315551234": [
+    {
+      "from": "16315551234",
+      "id": "wamid.HBgLMTYzMTU1NTEyMzQCVQIAERgSQ0UyNTlCMjJENUY5NTUwRjg0AA==",
+      "timestamp": "1678886400",
+      "text": {
+        "body": "Hi there! How are you doing?"
+      },
+      "type": "text",
+      "status": "archived",
+      "notes": ""
+    },
+    {
+      "from": "16315551234",
+      "id": "wamid.HBgLMTYzMTU1NTEyMzQCVQIAERgSQjE4MzA4QkZBN0Y4NDY2QzIzAA==",
+      "timestamp": "1678886460",
+      "text": {
+        "body": "Just checking in to see if you got my last message."
+      },
+      "type": "text",
+      "status": "archived",
+      "notes": ""
+    }
+  ],
+  "16315555678": [
+    {
+      "from": "16315555678",
+      "id": "wamid.HBgLMTYzMTU1NTU2NzgCVQIAERgSOUM0RDUwNjA0M0U0MzM0QkYwAA==",
+      "timestamp": "1678886520",
+      "text": {
+        "body": "Hello! This is a different person."
+      },
+      "type": "text",
+      "status": "archived",
+      "notes": ""
+    },
+    {
+      "from": "16315555678",
+      "id": "wamid.HBgLMTYzMTU1NTU2NzgCVQIAERgSNDY1QjM4NUMzQkQzNzQ4QTc4AA==",
+      "timestamp": "1678886580",
+      "text": {
+        "body": "Hope you have a great day!"
+      },
+      "type": "text",
+      "status": "archived",
+      "notes": ""
+    }
+  ]
+}
